@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NavigableEntryTest" 
+             x:Class="NavigableEntryTest.MainPage"
+             xmlns:ctrl="clr-namespace:NavigableEntry;assembly=NavigableEntry"
+             xmlns:effects="clr-namespace:Effects">
+    <StackLayout Padding="25,35">
+            <ctrl:NavigableEntryControl x:Name="EntryOne" Placeholder="First Entry" HeightRequest="45"/>
+            <ctrl:NavigableEntryControl x:Name="EntryTwo" Placeholder="Second Entry" HeightRequest="45" Keyboard="Numeric"/>
+            <ctrl:NavigableEntryControl x:Name="EntryThree" Placeholder="Third Entry" HeightRequest="45" Keyboard="Numeric"/>
+            <BoxView/>
+            <Button Text="Save" VerticalOptions="End"/>
+    </StackLayout>
+</ContentPage>
