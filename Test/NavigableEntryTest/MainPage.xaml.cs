@@ -14,8 +14,8 @@ namespace NavigableEntryTest
 
         private void DefineControlsNavigation()
         {
-            EntryOne.NextEntry = EntryTwo;
-            EntryTwo.NextEntry = EntryThree;
+            EntryOne.NextView = EntryTwo;
+            EntryTwo.NextView = EntryThree;
         }
 
         private void DefineEffects()

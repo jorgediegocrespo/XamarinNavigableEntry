@@ -3,8 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:NavigableEntryTest" 
              x:Class="NavigableEntryTest.MainPage"
-             xmlns:ctrl="clr-namespace:NavigableEntry;assembly=NavigableEntry"
-             xmlns:effects="clr-namespace:Effects">
+             xmlns:ctrl="clr-namespace:NavigableEntry;assembly=NavigableEntry">
     <StackLayout Padding="25,35">
             <ctrl:NavigableEntryControl x:Name="EntryOne" Placeholder="First Entry" HeightRequest="45"/>
             <ctrl:NavigableEntryControl x:Name="EntryTwo" Placeholder="Second Entry" HeightRequest="45" Keyboard="Numeric"/>

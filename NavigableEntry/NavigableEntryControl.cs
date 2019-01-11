@@ -6,11 +6,11 @@ namespace NavigableEntry
 {
     public class NavigableEntryControl : Entry
     {
-        public static readonly BindableProperty NextEntryProperty = BindableProperty.Create(nameof(NextEntry), typeof(View), typeof(Entry));
-        public View NextEntry
+        public static readonly BindableProperty NextViewProperty = BindableProperty.Create(nameof(NextView), typeof(View), typeof(Entry));
+        public View NextView
         {
-            get => (View)GetValue(NextEntryProperty);
-            set => SetValue(NextEntryProperty, value);
+            get => (View)GetValue(NextViewProperty);
+            set => SetValue(NextViewProperty, value);
         }
 
         protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
@@ -25,7 +25,7 @@ namespace NavigableEntry
 
         public void OnNext()
         {
-            NextEntry?.Focus();
+            NextView?.Focus();
         }
     }
 }

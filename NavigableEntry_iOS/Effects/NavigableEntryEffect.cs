@@ -30,7 +30,7 @@ namespace NavigableEntry_iOS.Effects
             // Check if the attached element is of the expected type and has the NextEntry
             // property set. if so, configure the keyboard to indicate there is another entry
             // in the form and the dismiss action to focus on the next entry
-            if (base.Element is NavigableEntryControl xfControl && xfControl.NextEntry != null)
+            if (base.Element is NavigableEntryControl xfControl && xfControl.NextView != null)
             {
                 entry.ReturnKeyType = UIReturnKeyType.Next;
             }
@@ -49,7 +49,7 @@ namespace NavigableEntry_iOS.Effects
             UIBarButtonItem buttonAction = new UIBarButtonItem(UIBarButtonSystemItem.Done, delegate { Control.ResignFirstResponder(); });
 
             // If we have a next element, swap out the default state for "Next"
-            if (base.Element is NavigableEntryControl xfControl && xfControl.NextEntry != null)
+            if (base.Element is NavigableEntryControl xfControl && xfControl.NextView != null)
             {
                 buttonAction = new UIBarButtonItem("Next", UIBarButtonItemStyle.Plain, delegate
                 {

@@ -15,7 +15,7 @@ namespace NavigableEntry_Android.Effects
             // Check if the attached element is of the expected type and has the NextEntry
             // property set. if so, configure the keyboard to indicate there is another entry
             // in the form and the dismiss action to focus on the next entry
-            if (base.Element is NavigableEntryControl xfControl && xfControl.NextEntry != null)
+            if (base.Element is NavigableEntryControl xfControl && xfControl.NextView != null)
             {
                 var entry = (Android.Widget.EditText)Control;
 
